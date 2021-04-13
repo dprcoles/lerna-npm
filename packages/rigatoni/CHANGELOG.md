@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.2.0...@dcolesdev/rigatoni@1.3.0) (2021-04-13)
+
+
+### Features
+
+* **rigatoni:** added description component to rigatoni package ([359278c](https://github.com/dcolesDEV/lerna-npm/commit/359278ca3de56545399b44424099dd68e15127c3))
+
+
+
+
+
 # 1.2.0 (2021-04-13)
 
 
