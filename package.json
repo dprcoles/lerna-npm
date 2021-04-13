@@ -1,0 +1,8 @@
+{
+  "name": "lerna-npm",
+  "version": "independent",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
