@@ -1,3 +1,10 @@
 node_modules
-lerna-debug.log
+
+dist
+css
+
+logs
+*.log
+npm-debug.log*
+
 *.snap
