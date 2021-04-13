@@ -9,7 +9,10 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "ignoreChanges": ["**/__tests__/**"]
+      "message": "chore(release): publish",
+      "ignoreChanges": ["**/__tests__/**"],
+      "registry": "https://npm.pkg.github.com",
+      "allowBranch": "master"
     }
   }
 }
