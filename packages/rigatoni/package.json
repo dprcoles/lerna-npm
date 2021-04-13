@@ -2,7 +2,7 @@
   "name": "@daniecoles/rigatoni",
   "description": "An example package using lerna to deploy and manage versioning",
   "authors": "Daniel Coles <me@danielcoles.co.uk>",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "devDependencies": {
     "react": "^17.0.2"
@@ -12,5 +12,5 @@
   },
   "eslintConfig": {
     "extends": "../../.eslintrc.js"
-  }  
+  }
 }
