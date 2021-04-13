@@ -1,5 +1,5 @@
 {
-  "name": "@daniecoles/gnocchi",
+  "name": "@dcolesdev/gnocchi",
   "description": "An example package using lerna to deploy and manage versioning",
   "authors": "Daniel Coles <me@danielcoles.co.uk>",
   "version": "1.2.1",
@@ -31,5 +31,6 @@
   },
   "eslintConfig": {
     "extends": "../../.eslintrc.js"
-  }
+  },
+  "gitHead": "bf7c2755ef11396f08d50919739617b9fd9ca1dc"
 }
