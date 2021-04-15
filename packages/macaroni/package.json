@@ -1,0 +1,29 @@
+{
+  "name": "@dcolesdev/macaroni",
+  "description": "An example package using lerna to deploy and manage versioning",
+  "authors": "Daniel Coles <me@danielcoles.co.uk>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "SEE LICENSE IN ../../LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/dcolesDEV/lerna-npm.git",
+    "directory": "packages/macaroni"
+  },
+  "scripts": {
+    "build:bundles": "rollup -c ../../rollup.config.js",
+    "build:modules": "babel src -d dist --ignore **/__tests__/**,./src/index.js",
+    "build:scss": "node-sass --include-path ../../node_modules -o ./css ./scss/main.scss && postcss --config ../../postcss.config.js -r ./css/main.css",
+    "build": "rimraf dist css && yarn build:bundles && yarn build:modules && yarn build:scss",
+    "lint": "eslint ./src --ext .js,.jsx",
+    "test:unit": "jest --config ../../jest.config.js",
+    "test": "yarn lint && yarn test:unit"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "devDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

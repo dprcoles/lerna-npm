@@ -1,8 +1,1 @@
-module.exports = {
-  semi: false,
-  tabWidth: 2,
-  printWidth: 100,
-  singleQuote: true,
-  trailingComma: 'es5',
-  useTabs: false,
-}
+module.exports = require('./packages/macaroni/prettier')
