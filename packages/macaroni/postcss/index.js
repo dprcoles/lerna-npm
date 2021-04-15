@@ -1,5 +1,5 @@
-import autoprefixer from 'autoprefixer'
-import clean from 'postcss-clean'
+const autoprefixer = require('autoprefixer')
+const clean = require('postcss-clean')
 
 module.exports = {
   map: true,

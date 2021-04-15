@@ -1,5 +1,5 @@
-import babel from 'rollup-plugin-babel'
-import resolve from 'rollup-plugin-node-resolve'
+const babel = require('rollup-plugin-babel')
+const resolve = require('rollup-plugin-node-resolve')
 
 const bundle = ({
   external,
