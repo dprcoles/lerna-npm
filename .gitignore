@@ -8,5 +8,3 @@ logs
 npm-debug.log*
 
 *.snap
-
-.npmrc
