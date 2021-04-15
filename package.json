@@ -8,7 +8,7 @@
   "scripts": {
     "commit": "cz",
     "test": "lerna run test --since",
-    "ci:publish": "lerna publish -y --canary --preid ci --dist-tag=ci"
+    "ci:publish": "lerna publish -y --canary"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",
