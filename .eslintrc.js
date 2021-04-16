@@ -1,3 +1,1 @@
-const getConfig = require('./packages/macaroni/eslint')
-
-module.exports = getConfig({})
+module.exports = require('./packages/macaroni/eslint')
