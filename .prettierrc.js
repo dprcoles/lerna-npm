@@ -1,1 +1,3 @@
-module.exports = require('./packages/macaroni/prettier')
+const getConfig = require('./packages/macaroni/prettier')
+
+module.exports = getConfig({})

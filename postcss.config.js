@@ -1,1 +1,3 @@
-module.exports = require('./packages/macaroni/postcss')
+const getConfig = require('./packages/macaroni/postcss')
+
+module.exports = getConfig({})

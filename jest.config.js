@@ -1,1 +1,3 @@
-module.exports = require('./packages/macaroni/jest')
+const getConfig = require('./packages/macaroni/jest')
+
+module.exports = getConfig({})

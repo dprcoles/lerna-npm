@@ -1,1 +1,3 @@
-module.exports = require('./packages/macaroni/babel')
+const getConfig = require('./packages/macaroni/babel')
+
+module.exports = getConfig({})
