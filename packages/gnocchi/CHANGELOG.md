@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/gnocchi@1.3.2...@dcolesdev/gnocchi@1.4.0) (2021-04-16)
+
+
+### Bug Fixes
+
+* **test:** updated all jest scripts to update snapshots on run ([63e796c](https://github.com/dcolesDEV/lerna-npm/commit/63e796c0a1d603970ac4b566ad67504767314b9f))
+
+
+### Features
+
+* **gnocchi:** add description component to gnocchi ([7b5e933](https://github.com/dcolesDEV/lerna-npm/commit/7b5e9332b8167a19aad92afa83824cd981032216))
+
+
+
+
+
 ## [1.3.2](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/gnocchi@1.3.1...@dcolesdev/gnocchi@1.3.2) (2021-04-15)
 
 **Note:** Version bump only for package @dcolesdev/gnocchi

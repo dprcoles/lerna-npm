@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.3.2...@dcolesdev/rigatoni@1.4.0) (2021-04-16)
+
+
+### Bug Fixes
+
+* **test:** updated all jest scripts to update snapshots on run ([63e796c](https://github.com/dcolesDEV/lerna-npm/commit/63e796c0a1d603970ac4b566ad67504767314b9f))
+
+
+### Features
+
+* **rigatoni:** added description component to export ([8f3cccd](https://github.com/dcolesDEV/lerna-npm/commit/8f3cccd357aab71247668038a74a4397ef815103))
+* **rigatoni:** added scss file for description component ([1068146](https://github.com/dcolesDEV/lerna-npm/commit/1068146563aa8d65a0096b7e03028cc0632d23b8))
+
+
+
+
+
 ## [1.3.2](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.3.1...@dcolesdev/rigatoni@1.3.2) (2021-04-15)
 
 **Note:** Version bump only for package @dcolesdev/rigatoni
