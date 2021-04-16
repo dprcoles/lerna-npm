@@ -6,6 +6,7 @@ on:
 
 env:
   CI: true
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   test:
     name: test
@@ -13,14 +14,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Git Identity
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com' 
-      - name: Build and Test Changes
-        run: |
-          yarn ci:install
-          yarn ci:build
-          yarn ci:test
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install
+        run: yarn ci:install
+      - name: Build
+        run: yarn ci:build
+      - name: Test
+        run: yarn ci:test
