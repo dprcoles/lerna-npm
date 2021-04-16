@@ -1,0 +1,22 @@
+name: pull_request
+on:
+  pull_request:
+    branches: 
+    - master
+
+env:
+  CI: true
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install
+        run: yarn ci:install
+      - name: Build
+        run: yarn ci:build
+      - name: Test
+        run: yarn ci:test

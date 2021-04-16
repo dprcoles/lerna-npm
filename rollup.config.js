@@ -1,1 +1,3 @@
-module.exports = require('./packages/macaroni/rollup')
+const getConfig = require('./packages/macaroni/rollup')
+
+module.exports = getConfig({})
