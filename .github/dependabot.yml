@@ -9,4 +9,5 @@ updates:
       - "dependencies"
     commit-message:
       include: "scope"
+      prefix: "npm"
     open-pull-requests-limit: 5
