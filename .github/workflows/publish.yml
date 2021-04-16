@@ -29,6 +29,7 @@ jobs:
       - name: Release Changed Packages
         run: |
           yarn ci:install
+          yarn ci:build
           yarn ci:publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
