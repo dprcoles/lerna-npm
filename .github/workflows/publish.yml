@@ -34,4 +34,9 @@ jobs:
         run: yarn ci:build
       - name: Publish
         run: yarn ci:publish
+      - name: Update Docs
+        run: |
+          yarn ci:docs
+          git commit -am "chore(docs) version update"
+          git push
       
