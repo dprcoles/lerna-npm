@@ -1,7 +1,7 @@
 const updateMarkdown = require('./transforms')
 
 const docs = async () => {
-  updateMarkdown()
+  await updateMarkdown()
 }
 
 docs()
