@@ -2,7 +2,7 @@
   "name": "@dcolesdev/macaroni",
   "description": "An example config package using lerna to deploy and manage versioning",
   "authors": "Daniel Coles <me@danielcoles.co.uk>",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "main": "index.js",
   "license": "SEE LICENSE IN ../../LICENSE",
   "repository": {
