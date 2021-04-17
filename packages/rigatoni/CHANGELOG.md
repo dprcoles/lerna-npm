@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.4.0...@dcolesdev/rigatoni@1.6.0) (2021-04-17)
+
+
+### Features
+
+* **actions:** added docs script to update markdown badges ([b1083ad](https://github.com/dcolesDEV/lerna-npm/commit/b1083ad51cfaf04f98ea82763e4a594b471aec06))
+
+
+
+
+
 # [1.5.0](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.4.0...@dcolesdev/rigatoni@1.5.0) (2021-04-17)
 
 
