@@ -1,4 +1,4 @@
 # Macaroni
 <!-- AUTO-GENERATED-CONTENT:START (badge:package=macaroni) -->
-![Github Release](https://img.shields.io/badge/version-v1.1.2-orange)
+![Github Release](https://img.shields.io/badge/version-v1.2.0-orange)
 <!-- AUTO-GENERATED-CONTENT:END -->
