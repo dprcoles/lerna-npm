@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.6.0...@dcolesdev/rigatoni@1.7.0) (2021-04-17)
+
+
+### Features
+
+* **docs:** added dynamic package list to root readme ([b386cf7](https://github.com/dcolesDEV/lerna-npm/commit/b386cf7467474396011ea4cf6bb8bf6b4ecc6ee8))
+
+
+
+
+
 # [1.6.0](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.4.0...@dcolesdev/rigatoni@1.6.0) (2021-04-17)
 
 
