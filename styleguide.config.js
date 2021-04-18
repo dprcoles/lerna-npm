@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   components: 'packages/**/src/[a-z]*.jsx',
   webpackConfig: {
@@ -14,5 +16,10 @@ module.exports = {
         },
       ],
     },
+  },
+  getComponentPathLine(componentPath) {
+    const name = path.basename(componentPath, '.js')
+    const dir = path.dirname(componentPath)
+    return `import ${name} from '${dir}'`
   },
 }
