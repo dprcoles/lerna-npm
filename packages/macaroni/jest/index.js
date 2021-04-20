@@ -8,4 +8,11 @@ module.exports = {
   coverageReporters: ['text'],
   resetModules: true,
   rootDir: process.cwd(),
+  moduleNameMapper: Object.assign({
+    '^.+\\.(svg)$': path.join(__dirname, './mocks/file.js'),
+    '^.+\\.(scss)$': path.join(__dirname, './mocks/file.js'),
+    '^.+\\.(md)$': path.join(__dirname, './mocks/file.js'),
+    '^.+\\.(pdf|zip)$': path.join(__dirname, './mocks/file.js'),
+    '^.+\\.(jpg|jpeg|png|gif|bmp)$': path.join(__dirname, './mocks/file.js'),
+  }),
 }
