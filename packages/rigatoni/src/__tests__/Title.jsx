@@ -1,8 +1,8 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Title from '../src/title'
+import Title from '../Title'
 
-const title = 'Gnocchi!'
+const title = 'Rigatoni!'
 
 const wrapper = shallow(<Title title={title} />)
 

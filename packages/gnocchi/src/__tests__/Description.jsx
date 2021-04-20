@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Description from '../src/description'
+import Description from '../Description'
 
 const description =
   'Gnocchi are a type of pasta consisting of small round balls made from flour and sometimes potato.'

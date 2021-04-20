@@ -13,10 +13,13 @@
     "ci:install": "yarn install --frozen-lockfile",
     "ci:version": "lerna version --conventional-commits --yes",
     "ci:publish": "lerna publish -y",
-    "ci:docs": "node scripts/docs"
+    "ci:docs": "node scripts/docs",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
+    "babel-loader": "^8.2.2",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
     "enzyme": "^3.11.0",
@@ -30,10 +33,12 @@
     "prettier": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-styleguidist": "^11.1.6",
     "react-test-renderer": "^17.0.2",
     "rimraf": "^3.0.2",
     "rollup": "^2.45.2",
-    "sync-rpc": "^1.3.6"
+    "sync-rpc": "^1.3.6",
+    "webpack": "^5.33.2"
   },
   "husky": {
     "hooks": {
@@ -43,7 +48,7 @@
   },
   "lint-staged": {
     "./**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
+      "eslint --fix && prettier --write"
     ]
   },
   "config": {
