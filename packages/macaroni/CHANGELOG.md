@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/macaroni@1.4.1...@dcolesdev/macaroni@1.5.0) (2021-04-20)
+
+
+### Bug Fixes
+
+* **eslint:** set jest env in eslint config ([9d9b161](https://github.com/dcolesDEV/lerna-npm/commit/9d9b1618fd581bfc5f3d9da835d854fc60a03a6b))
+
+
+### Features
+
+* **styleguidist:** initial setup for styleguidist ([3a21e5d](https://github.com/dcolesDEV/lerna-npm/commit/3a21e5dd8be4c54c78fe33d4dd17c14ce648b0e5))
+
+
+
+
+
 ## [1.4.1](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/macaroni@1.4.0...@dcolesdev/macaroni@1.4.1) (2021-04-17)
 
 **Note:** Version bump only for package @dcolesdev/macaroni
