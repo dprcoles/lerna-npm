@@ -2,7 +2,7 @@
   "name": "@dcolesdev/gnocchi",
   "description": "An example package using lerna to deploy and manage versioning",
   "authors": "Daniel Coles <me@danielcoles.co.uk>",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.js",
   "license": "SEE LICENSE IN ../../LICENSE",
