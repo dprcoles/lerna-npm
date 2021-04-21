@@ -40,4 +40,6 @@ jobs:
         run: yarn ci:test
 
       - name: Version Updated Packages 🏷️
-        run: yarn ci:version
+        run: |
+          git checkout "${GITHUB_REF:11}"          
+          yarn ci:version
