@@ -14,7 +14,7 @@
     "ci:version": "lerna version --conventional-commits --yes",
     "ci:publish": "lerna publish -y",
     "ci:docs": "node scripts/docs",
-    "styleguide": "styleguidist server",
+    "styleguide:dev": "styleguidist server",
     "styleguide:build": "styleguidist build"
   },
   "devDependencies": {
