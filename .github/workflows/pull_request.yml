@@ -38,3 +38,6 @@ jobs:
 
       - name: Test 🧪
         run: yarn ci:test
+
+      - name: Version Updated Packages 🏷️
+        run: yarn ci:version
