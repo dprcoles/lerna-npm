@@ -41,6 +41,9 @@ jobs:
       - name: Test 🧪
         run: yarn ci:test
 
+      - name: Version Updated Packages 🏷️
+        run: yarn ci:version
+
       - name: Publish Packages 📦
         run: yarn ci:publish
 
