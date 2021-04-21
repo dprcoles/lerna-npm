@@ -10,8 +10,13 @@
     "publish": {
       "conventionalCommits": true,
       "message": "chore(release): publish",
-      "ignoreChanges": ["**/__tests__/**"],
+      "ignoreChanges": ["**/__tests__/**, **/*.md"],
       "registry": "https://npm.pkg.github.com",
+      "allowBranch": "master"
+    },
+    "version": {
+      "message": "chore(release): publish",
+      "ignoreChanges": ["**/__tests__/**, **/*.md"],
       "allowBranch": "master"
     }
   }
