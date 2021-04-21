@@ -1,4 +1,5 @@
 name: pull_request
+
 on:
   pull_request:
     branches: 
@@ -7,16 +8,36 @@ on:
 env:
   CI: true
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
-  test:
-    name: test
-    runs-on: ubuntu-18.04
+  build_and_test:
+    name: Test 🧪
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v2
-      - name: Install
+        with:
+          fetch-depth: 0
+      
+      - name: Pull Latest Tags 🏷️
+        run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+
+      - name: Setup Node 🔧
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+          registry-url: 'https://npm.pkg.github.com'
+          scope: '@dcolesdev'
+
+      - name: Install 🔻
         run: yarn ci:install
-      - name: Build
+
+      - name: List Updated Packages 📦
+        run: yarn ci:changes
+
+      - name: Build 👷
         run: yarn ci:build
-      - name: Test
+
+      - name: Test 🧪
         run: yarn ci:test
