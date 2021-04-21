@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Pull Latest Tags 🏷️
-        run: git fetch --depth=1 origin +refs/tags/*:refs/tags/**
+        run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
       - name: Setup Node 🔧
         uses: actions/setup-node@v2
