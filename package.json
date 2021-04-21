@@ -8,9 +8,10 @@
   "scripts": {
     "commit": "cz",
     "test:all": "lerna run test",
-    "ci:test": "lerna run test --since",
-    "ci:build": "lerna run build --since",
     "ci:install": "yarn install --frozen-lockfile",
+    "ci:changes": "lerna ls --since",
+    "ci:build": "lerna run build --since",
+    "ci:test": "lerna run test --since",
     "ci:version": "lerna version --conventional-commits --yes",
     "ci:publish": "lerna publish -y",
     "ci:docs": "node scripts/docs",
