@@ -2,7 +2,7 @@
   "name": "@dcolesdev/rigatoni",
   "description": "An example package using lerna to deploy and manage versioning",
   "authors": "Daniel Coles <me@danielcoles.co.uk>",
-  "version": "1.7.17",
+  "version": "1.7.18",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.js",
   "license": "SEE LICENSE IN ../../LICENSE",

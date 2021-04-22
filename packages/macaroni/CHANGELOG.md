@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.16](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/macaroni@1.4.1...@dcolesdev/macaroni@1.5.16) (2021-04-22)
+
+
+### Bug Fixes
+
+* **version:** correct versions in package.json ([f24061f](https://github.com/dcolesDEV/lerna-npm/commit/f24061ffa40074bd71b00da2feb3ef21ca695884))
+
+
+
+
+
 ## [1.4.1](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/macaroni@1.4.0...@dcolesdev/macaroni@1.4.1) (2021-04-17)
 
 **Note:** Version bump only for package @dcolesdev/macaroni
