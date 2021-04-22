@@ -1,6 +1,6 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import Title from '../Title'
+import Title from '../src/Title'
 
 const title = 'Rigatoni!'
 
