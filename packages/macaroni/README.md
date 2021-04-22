@@ -1,4 +1,4 @@
 # Macaroni
 <!-- AUTO-GENERATED-CONTENT:START (badge:package=macaroni) -->
-![Package Version](https://img.shields.io/badge/version-v1.5.20-orange)
+![Package Version](https://img.shields.io/badge/version-v1.5.21-orange)
 <!-- AUTO-GENERATED-CONTENT:END -->
