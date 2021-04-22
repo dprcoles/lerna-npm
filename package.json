@@ -12,8 +12,7 @@
     "ci:changes": "lerna ls --since origin/master",
     "ci:build": "lerna run build --since origin/master",
     "ci:test": "lerna run test --since origin/master",
-    "ci:version": "lerna version --conventional-commits --yes --include-merged-tags",
-    "ci:publish": "lerna publish -y from-git",
+    "ci:publish": "lerna publish -y from-git --include-merged-tags",
     "ci:docs": "node scripts/docs",
     "styleguide:dev": "styleguidist server",
     "styleguide:build": "styleguidist build"

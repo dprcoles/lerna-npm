@@ -30,7 +30,7 @@ jobs:
       - name: Install 🔻
         run: yarn ci:install
 
-      - name: List Updated Packages 📦
+      - name: List Updated Packages ✏️
         run: yarn ci:changes
 
       - name: Build 👷
