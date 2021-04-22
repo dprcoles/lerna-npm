@@ -12,7 +12,7 @@
     "ci:build": "lerna run build --since origin/master",
     "ci:changes": "lerna ls --since origin/master",
     "ci:install": "yarn install --frozen-lockfile",
-    "ci:version": "lerna version --conventional-commits --yes --no-git-tag-version",
+    "ci:version": "lerna version --conventional-commits --yes",
     "ci:publish": "lerna publish from-package -y --include-merged-tags",
     "ci:docs": "node scripts/docs",
     "styleguide:dev": "styleguidist server",
