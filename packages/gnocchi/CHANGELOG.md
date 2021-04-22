@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.8](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/gnocchi@1.8.7...@dcolesdev/gnocchi@1.8.8) (2021-04-22)
+
+
+### Bug Fixes
+
+* **packages:** moved tests folder out of src ([429ad5a](https://github.com/dcolesDEV/lerna-npm/commit/429ad5a3848b7b16d7aad2501addce766753932c))
+
+
+
+
+
 ## [1.8.7](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/gnocchi@1.8.6...@dcolesdev/gnocchi@1.8.7) (2021-04-22)
 
 **Note:** Version bump only for package @dcolesdev/gnocchi

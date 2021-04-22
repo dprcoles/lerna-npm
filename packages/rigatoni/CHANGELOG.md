@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.15](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.7.14...@dcolesdev/rigatoni@1.7.15) (2021-04-22)
+
+
+### Bug Fixes
+
+* **packages:** moved tests folder out of src ([429ad5a](https://github.com/dcolesDEV/lerna-npm/commit/429ad5a3848b7b16d7aad2501addce766753932c))
+
+
+
+
+
 ## [1.7.14](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.7.13...@dcolesdev/rigatoni@1.7.14) (2021-04-22)
 
 **Note:** Version bump only for package @dcolesdev/rigatoni
