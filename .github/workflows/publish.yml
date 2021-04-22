@@ -20,17 +20,17 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup GitHub Actions Bot 🤖
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
       - name: Setup Node 🔧
         uses: actions/setup-node@v2
         with:
           node-version: 14
           registry-url: 'https://npm.pkg.github.com'
           scope: '@dcolesdev'
-
-      - name: Setup GitHub Actions Bot 🤖
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: Install 🔻
         run: yarn ci:install
@@ -45,7 +45,9 @@ jobs:
         run: yarn ci:test
 
       - name: Fetch Latest Tags 🏷️
-        run: git fetch --tags --force
+        run: |         
+          git fetch --tags --force
+          git tag --list
 
       - name: Publish Packages 📦
         run: yarn ci:publish
