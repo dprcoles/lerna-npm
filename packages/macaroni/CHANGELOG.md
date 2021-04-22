@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.18](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/macaroni@1.5.17...@dcolesdev/macaroni@1.5.18) (2021-04-22)
+
+
+### Bug Fixes
+
+* **jest:** enable jest in eslint config ([44d504f](https://github.com/dcolesDEV/lerna-npm/commit/44d504fa23247b8946ae86c9e51b4c250992e169))
+
+
+
+
+
 ## [1.5.17](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/macaroni@1.5.16...@dcolesdev/macaroni@1.5.17) (2021-04-22)
 
 **Note:** Version bump only for package @dcolesdev/macaroni
