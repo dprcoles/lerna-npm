@@ -13,46 +13,35 @@ env:
 jobs:
   publish_and_deploy:
     name: Publish 📦 & Deploy 🚀 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-
-      - name: Setup GitHub Actions Bot 🤖
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
       - name: Setup Node 🔧
         uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: 'https://npm.pkg.github.com'
           scope: '@dcolesdev'
-
+      - name: Setup GitHub Actions Bot 🤖
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Install 🔻
         run: yarn ci:install
-
       - name: Build 👷
         run: yarn ci:build
-
-      - name: List Updated Packages ✏️
-        run: yarn ci:changes
-
       - name: Publish Packages 📦
         run: yarn ci:publish
-
       - name: Update Docs 📜
         run: |
           yarn ci:docs
           git commit -am "chore(docs) version update"
           git push
-
       - name: Build Style Guide 👷
-        run: yarn styleguide:build
-        
+        run: yarn styleguide:build        
       - name: Deploy Style Guide 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
