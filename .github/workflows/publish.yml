@@ -48,7 +48,7 @@ jobs:
         
       - name: Check For Changes ✔️
         id: changes
-        run:   |
+        run: |
          if [[ -z $(git status -s) ]]; then
             echo ::set-output name=has_changes::false
          else
