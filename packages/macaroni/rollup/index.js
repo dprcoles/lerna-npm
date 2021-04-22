@@ -1,7 +1,5 @@
 const babel = require('rollup-plugin-babel')
 const resolve = require('rollup-plugin-node-resolve')
-const url = require('@rollup/plugin-url')
-const image = require('@rollup/plugin-image')
 
 const bundle = ({
   external,
@@ -33,8 +31,6 @@ const bundle = ({
     babel({
       exclude: 'node_modules/**',
     }),
-    url(),
-    image(),
   ],
 })
 
