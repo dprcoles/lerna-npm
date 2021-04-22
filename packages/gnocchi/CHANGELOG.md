@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/gnocchi@1.7.6...@dcolesdev/gnocchi@1.8.0) (2021-04-22)
+
+
+### Bug Fixes
+
+* **gnocchi:** delete description.md ([268ee8a](https://github.com/dcolesDEV/lerna-npm/commit/268ee8a5c5c6c5aa9ed98b64651a641b5288e88f))
+* **gnocchi:** delete title.jsx ([adc900b](https://github.com/dcolesDEV/lerna-npm/commit/adc900bcbde7e66bc56fe4213547763d86bc0c5e))
+* **gnocchi:** fix casing on Title example ([2376554](https://github.com/dcolesDEV/lerna-npm/commit/2376554f48e07b7f7b14ea12c2c1056cda5a6a44))
+
+
+### Features
+
+* **gnocchi:** update scss for title ([ad502ee](https://github.com/dcolesDEV/lerna-npm/commit/ad502ee9d530dc5a181f32e0a50e9c62cb1185ae))
+
+
+
+
+
 ## [1.7.6](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/gnocchi@1.7.5...@dcolesdev/gnocchi@1.7.6) (2021-04-22)
 
 **Note:** Version bump only for package @dcolesdev/gnocchi

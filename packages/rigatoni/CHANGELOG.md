@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.7](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.7.6...@dcolesdev/rigatoni@1.7.7) (2021-04-22)
+
+
+### Bug Fixes
+
+* **rigatoni:** delete description.jsx ([eb20e46](https://github.com/dcolesDEV/lerna-npm/commit/eb20e46fadc306f308b3b04f702b697d007a384b))
+* **rigatoni:** delete description.md ([0e28edc](https://github.com/dcolesDEV/lerna-npm/commit/0e28edc365689fe569b20e93545b585c272e4b2b))
+* **rigatoni:** delete title.jsx ([00a06d0](https://github.com/dcolesDEV/lerna-npm/commit/00a06d0c1547743ae22bcbf45be36a29d04c22ff))
+* **rigatoni:** delete title.md ([081c13c](https://github.com/dcolesDEV/lerna-npm/commit/081c13ca67f53a9584eca182b9b51ad1175d6589))
+
+
+
+
+
 ## [1.7.6](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.7.5...@dcolesdev/rigatoni@1.7.6) (2021-04-22)
 
 **Note:** Version bump only for package @dcolesdev/rigatoni
