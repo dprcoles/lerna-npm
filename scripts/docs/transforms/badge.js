@@ -7,7 +7,7 @@ const badge = (pkg) => {
 
   const { version } = loadPackageJson(pkg)
 
-  return `![Github Release](https://img.shields.io/badge/version-v${version.replace(
+  return `![Package Version](https://img.shields.io/badge/version-v${version.replace(
     '-',
     '--'
   )}-orange)`
