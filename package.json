@@ -1,6 +1,5 @@
 {
   "name": "@dcolesdev/lerna-npm",
-  "homepage": "https://dcolesdev.github.io/lerna-npm",
   "version": "2.0.0",
   "private": true,
   "workspaces": [
