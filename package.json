@@ -13,7 +13,7 @@
     "ci:changes": "lerna ls --since origin/master",
     "ci:build": "lerna run build --since origin/master",
     "ci:test": "lerna run test --since origin/master",
-    "ci:publish": "lerna publish -y --include-merged-tags --dist-tag latest",
+    "ci:publish": "lerna publish -y",
     "ci:docs": "node scripts/docs",
     "styleguide:dev": "styleguidist server",
     "styleguide:build": "styleguidist build"
