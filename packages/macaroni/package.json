@@ -7,7 +7,7 @@
   "license": "SEE LICENSE IN ../../LICENSE",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dcolesDEV/lerna-npm.git",
+    "url": "ssh://git@github.com/dcolesDEV/lerna-npm.git",
     "directory": "packages/macaroni"
   },
   "scripts": {
