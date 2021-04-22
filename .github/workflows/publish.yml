@@ -45,7 +45,7 @@ jobs:
         run: yarn ci:test
 
       - name: Fetch Latest Tags 🏷️
-        run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
+        run: git fetch --tags --force
 
       - name: Publish Packages 📦
         run: yarn ci:publish
