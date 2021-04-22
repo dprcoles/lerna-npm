@@ -1,4 +1,4 @@
 # Gnocchi
 <!-- AUTO-GENERATED-CONTENT:START (badge:package=gnocchi) -->
-![Github Release](https://img.shields.io/badge/version-v1.8.6-orange)
+![Github Release](https://img.shields.io/badge/version-v1.8.7-orange)
 <!-- AUTO-GENERATED-CONTENT:END -->
