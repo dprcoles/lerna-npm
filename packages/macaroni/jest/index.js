@@ -8,4 +8,13 @@ module.exports = {
   coverageReporters: ['text'],
   resetModules: true,
   rootDir: process.cwd(),
+  testPathIgnorePatterns: ['/node_modules/', '/__mocks__/', '/scripts/'],
+  moduleNameMapper: Object.assign({
+    '^.+\\.(jpg|jpeg|png|gif|bmp)$': path.join(__dirname, './mocks/file.js'),
+    '^.+\\.(pdf|zip)$': path.join(__dirname, './mocks/file.js'),
+    '^.+\\.(md)$': path.join(__dirname, './mocks/file.js'),
+    '^.+\\.(svg)$': path.join(__dirname, './mocks/file.js'),
+    '^.+\\.(scss)$': path.join(__dirname, './mocks/file.js'),
+    '^.+\\.(eot|otf|webp|ttf|woff|woff2)$': path.join(__dirname, './mocks/file.js'),
+  }),
 }
