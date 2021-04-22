@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.12](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/gnocchi@1.8.11...@dcolesdev/gnocchi@1.8.12) (2021-04-22)
+
+**Note:** Version bump only for package @dcolesdev/gnocchi
+
+
+
+
+
 ## [1.8.11](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/gnocchi@1.7.1...@dcolesdev/gnocchi@1.8.11) (2021-04-22)
 
 
