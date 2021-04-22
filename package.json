@@ -8,9 +8,9 @@
   "scripts": {
     "commit": "cz",
     "test:all": "lerna run test",
-    "ci:test": "lerna run test --since head",
-    "ci:build": "lerna run build --since head",
-    "ci:changes": "lerna ls --since head",
+    "ci:test": "lerna run test --since origin/master",
+    "ci:build": "lerna run build --since origin/master",
+    "ci:changes": "lerna ls --since origin/master",
     "ci:install": "yarn install --frozen-lockfile",
     "ci:version": "lerna version --conventional-commits --yes --no-git-tag-version",
     "ci:publish": "lerna publish from-package -y --include-merged-tags",
