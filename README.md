@@ -9,8 +9,8 @@
 <!-- AUTO-GENERATED-CONTENT:START (packageList) -->
 | Package | Version | Description |
 | -------- | ------- | ----------- |
-| [@dcolesdev/gnocchi](https://github.com/dcolesDEV/lerna-npm/blob/master/packages/gnocchi) | 1.8.12 | An example package using lerna to deploy and manage versioning |
-| [@dcolesdev/macaroni](https://github.com/dcolesDEV/lerna-npm/blob/master/packages/macaroni) | 1.5.17 | An example configuration package using lerna to deploy and manage versioning |
-| [@dcolesdev/rigatoni](https://github.com/dcolesDEV/lerna-npm/blob/master/packages/rigatoni) | 1.7.19 | An example package using lerna to deploy and manage versioning |
+| [@dcolesdev/gnocchi](https://github.com/dcolesDEV/lerna-npm/blob/master/packages/gnocchi) | 1.8.14 | An example package using lerna to deploy and manage versioning |
+| [@dcolesdev/macaroni](https://github.com/dcolesDEV/lerna-npm/blob/master/packages/macaroni) | 1.5.19 | An example configuration package using lerna to deploy and manage versioning |
+| [@dcolesdev/rigatoni](https://github.com/dcolesDEV/lerna-npm/blob/master/packages/rigatoni) | 1.7.21 | An example package using lerna to deploy and manage versioning |
 
 <!-- AUTO-GENERATED-CONTENT:END -->
