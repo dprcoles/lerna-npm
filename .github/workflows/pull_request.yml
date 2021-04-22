@@ -37,8 +37,8 @@ jobs:
       - name: Test 🧪
         run: yarn ci:test
 
-      - name: Check Current Status ✔️
-        run: git status
+      - name: List Changed Packages ✏️
+        run: yarn ci:changes
 
       - name: Version Changed Packages 🏷️
         run: |
