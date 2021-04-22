@@ -52,7 +52,7 @@ jobs:
          if [[ -z $(git status -s) ]]; then
             echo ::set-output name=has_changes::false
          else
-            echo ::output name=has_changes::true
+            echo ::set-output name=has_changes::true
          fi
         shell: bash
       
@@ -61,6 +61,7 @@ jobs:
         run: |
           git commit -am "chore(docs) version update"
           git push
+          
       - name: Build Style Guide 👷
         run: yarn styleguide:build
         
