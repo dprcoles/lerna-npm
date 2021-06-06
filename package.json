@@ -8,12 +8,12 @@
   "scripts": {
     "commit": "cz",
     "test:all": "lerna run test",
-    "ci:test": "lerna run test --since origin/master",
-    "ci:build": "lerna run build --since origin/master",
-    "ci:changes": "lerna ls --since origin/master",
+    "ci:test": "lerna run test --since",
+    "ci:build": "lerna run build --since",
+    "ci:changes": "lerna ls --since",
     "ci:install": "yarn install --frozen-lockfile",
     "ci:version": "lerna version --conventional-commits --create-release github --yes",
-    "ci:publish": "lerna publish from-package -y --include-merged-tags",
+    "ci:publish": "yarn ci:build && lerna publish from-package -y --include-merged-tags",
     "ci:docs": "node scripts/docs",
     "styleguide:dev": "styleguidist server",
     "styleguide:build": "styleguidist build"
