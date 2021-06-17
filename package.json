@@ -14,7 +14,7 @@
     "ci:install": "yarn install --frozen-lockfile",
     "ci:preversion": "lerna version prerelease --conventional-prerelease --create-release github -m \"chore(prerelease): publish [skip ci]\" --yes",
     "ci:prepublish": "yarn ci:build && lerna publish from-package --npm-tag next --include-merged-tags -y",
-    "ci:version": "lerna version --conventional-commits --create-release github --yes --",
+    "ci:version": "lerna version --conventional-commits --conventional-graduate --create-release github --yes --",
     "ci:publish": "yarn ci:build && lerna publish from-package -y --include-merged-tags",
     "ci:docs": "node scripts/docs",
     "styleguide:dev": "styleguidist server",
