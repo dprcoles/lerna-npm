@@ -1,4 +1,4 @@
 # Rigatoni
 <!-- AUTO-GENERATED-CONTENT:START (badge:package=rigatoni) -->
-![Package Version](https://img.shields.io/badge/version-v1.7.23-orange)
+![Package Version](https://img.shields.io/badge/version-v1.7.24--alpha.3-orange)
 <!-- AUTO-GENERATED-CONTENT:END -->
