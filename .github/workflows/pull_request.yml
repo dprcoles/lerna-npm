@@ -47,4 +47,4 @@ jobs:
         run: yarn ci:preversion
       
       - name: Publish Prerelease Packages 📦
-        run: yarn ci:prerelease
+        run: yarn ci:prepublish
