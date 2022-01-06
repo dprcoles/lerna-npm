@@ -22,6 +22,8 @@ A repository to showcase how lerna can be used to manage individual npm packages
 
 </details>
 
+## How does it work
+
 This project is a [monorepo](https://trunkbaseddevelopment.com/monorepos/), managed using [lerna](https://lerna.js.org/) and [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/). This allows multiple packages to be stored within the same codebase, but have independent dependencies from each other. This works great for the intention of this repository, as it means you will only ever import the required dependencies of the package you are installing rather than the dependencies for every package in this repository.
 
 When a change to a package is pushed, the [GitHub workflow](https://github.com/dcolesdev/lerna-npm/blob/master/.github/workflows/publish.yml) that has been set-up using Lerna's [`lerna version`](https://github.com/lerna/lerna/tree/main/commands/version#readme) and [`lerna publish`](https://github.com/lerna/lerna/tree/main/commands/publish#readme) commands will detect and generate a release for any new/updated packages. This release will bump the version of the new/updated package(s) and publish a new npm package through GitHub. The other packages in the repository that were not altered as part of the change will not be updated in any way.
