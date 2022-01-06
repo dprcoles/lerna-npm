@@ -4,13 +4,23 @@
 
 A repository to showcase how lerna can be used to manage individual npm packages in a monorepo!
 
-## What’s In This Document
+<details open>
+  <summary><b>Table of contents</b></summary>
 
-- [How does it work?](#How-does-it-work)
-- [Package List](#Package-list)
+---
+
+- [How does it work](#How-does-it-work)
+- [Packages](#Packages)
+  - [Using the packages](#Using-the-packages)
 - [Creating a new package](#Creating-a-new-package)
+  - [Adding dependencies](#Adding-dependencies)
+  - [Committing changes](#Committing-changes)
+  - [Pre-release Packages](#Pre-release-Packages)
+  - [Merging changes](#Merging-changes)
+  - [Style guide](#Style-guide)
+---
 
-## How does it work
+</details>
 
 This project is a [monorepo](https://trunkbaseddevelopment.com/monorepos/), managed using [lerna](https://lerna.js.org/) and [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/). This allows multiple packages to be stored within the same codebase, but have independent dependencies from each other. This works great for the intention of this repository, as it means you will only ever import the required dependencies of the package you are installing rather than the dependencies for every package in this repository.
 
