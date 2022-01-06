@@ -21,11 +21,47 @@ Packages are versioned [semantically](https://semver.org/#summary), and managed 
 ## Packages
 
 <!-- AUTO-GENERATED-CONTENT:START (packageList) -->
-| Package | Version | Description |
-| -------- | ------- | ----------- |
-| [@dcolesdev/gnocchi](https://github.com/dcolesDEV/lerna-npm/blob/master/packages/gnocchi) | 1.8.17 | An example package using lerna to deploy and manage versioning |
-| [@dcolesdev/rigatoni](https://github.com/dcolesDEV/lerna-npm/blob/master/packages/rigatoni) | 1.7.25 | An example package using lerna to deploy and manage versioning |
 
+<table>
+  <thead>
+    <tr>
+      <th>Package</th>
+      <th>Version</th>
+      <th>Description</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr>
+      <td>
+        <a href="https://dcolesdev.github.io/lerna-npm/#/Packages/Gnocchi"
+        >@dcolesdev/gnocchi
+        </a>
+      </td>
+      <td>1.8.17</td>
+      <td>An example package using lerna to deploy and manage versioning</td>
+      <td align="center">
+        <a href="https://github.com/dcolesDEV/lerna-npm/blob/master/packages/gnocchi" style="height: 20px;">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/mark-github.svg" alt="GitHub source" height="20" width="20" />
+        </a>
+      </td>
+    </tr>
+   <tr>
+      <td>
+        <a href="https://dcolesdev.github.io/lerna-npm/#/Packages/Rigatoni"
+        >@dcolesdev/rigatoni
+        </a>
+      </td>
+      <td>1.7.25</td>
+      <td>An example package using lerna to deploy and manage versioning</td>
+      <td align="center">
+        <a href="https://github.com/dcolesDEV/lerna-npm/blob/master/packages/rigatoni" style="height: 20px;">
+          <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/mark-github.svg" alt="GitHub source" height="20" width="20" />
+        </a>
+      </td>
+    </tr>
+    </tbody>
+</table>
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 ### Using the packages
