@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Description should render the Description component correctly 1`] = `
+<p
+  className="[ Description ]"
+>
+  Gnocchi are a type of pasta consisting of small round balls made from flour and sometimes potato.
+</p>
+`;

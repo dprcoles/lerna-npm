@@ -1,4 +1,12 @@
+const fs = require('fs')
 const path = require('path')
+
+const { PACKAGE_PREFIX } = require('../../scripts/constants')
+
+const rootDir = path.resolve(__dirname, '../..')
+const packages = fs
+  .readdirSync(path.resolve(rootDir, 'packages'))
+  .filter((pkg) => !pkg.startsWith('.') && !pkg.startsWith('_'))
 
 module.exports = {
   snapshotSerializers: ['enzyme-to-json/serializer'],
@@ -16,5 +24,12 @@ module.exports = {
     '^.+\\.(svg)$': path.join(__dirname, './mocks/file.js'),
     '^.+\\.(scss)$': path.join(__dirname, './mocks/file.js'),
     '^.+\\.(eot|otf|webp|ttf|woff|woff2)$': path.join(__dirname, './mocks/file.js'),
+    ...packages.reduce(
+      (x, pkg) => ({
+        ...x,
+        [`${PACKAGE_PREFIX}${pkg}$`]: path.join(__dirname, `../../packages/${pkg}/dist`),
+      }),
+      {}
+    ),
   }),
 }

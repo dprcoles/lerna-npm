@@ -1,1 +1,1 @@
-module.exports = require('./packages/macaroni/postcss')
+module.exports = require('./config/postcss')

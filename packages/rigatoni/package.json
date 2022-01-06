@@ -2,7 +2,7 @@
   "name": "@dcolesdev/rigatoni",
   "description": "An example package using lerna to deploy and manage versioning",
   "authors": "Daniel Coles <me@danielcoles.co.uk>",
-  "version": "1.7.24",
+  "version": "1.7.25-alpha.0",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.js",
   "license": "SEE LICENSE IN ../../LICENSE",
@@ -12,12 +12,12 @@
     "directory": "packages/rigatoni"
   },
   "scripts": {
-    "build:bundles": "rollup -c ../../rollup.config.js",
+    "build:bundles": "cross-env MODULES=false rollup -c ../../rollup.config.js",
     "build:modules": "babel src -d dist --ignore **/__tests__/**,./src/index.js",
     "build:scss": "node-sass --include-path ../../node_modules -o ./css ./scss/main.scss && postcss --config ../../postcss.config.js -r ./css/main.css",
     "build": "rimraf dist css && yarn build:bundles && yarn build:modules && yarn build:scss",
     "lint": "eslint ./src --ext .js,.jsx",
-    "test:unit": "jest --config ../../jest.config.js",
+    "test:unit": "cross-env BABEL_ENV=test jest --config ../../jest.config.js",
     "test": "yarn lint && yarn test:unit -u"
   },
   "publishConfig": {
