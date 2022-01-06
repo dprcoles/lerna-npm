@@ -1,1 +1,1 @@
-module.exports = require('./packages/macaroni/babel')
+module.exports = require('./config/babel')

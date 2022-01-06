@@ -1,1 +1,1 @@
-module.exports = require('./packages/macaroni/prettier')
+module.exports = require('./config/prettier')

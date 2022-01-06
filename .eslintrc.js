@@ -1,1 +1,1 @@
-module.exports = require('./packages/macaroni/eslint')
+module.exports = require('./config/eslint')

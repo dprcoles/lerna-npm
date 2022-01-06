@@ -1,1 +1,1 @@
-module.exports = require('./packages/macaroni/jest')
+module.exports = require('./config/jest')
