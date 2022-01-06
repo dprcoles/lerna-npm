@@ -64,7 +64,12 @@ module.exports = {
   },
   sections: [
     {
+      name: 'Introduction',
+      content: path.resolve(rootDir, './site/docs/Introduction.md'),
+    },
+    {
       name: 'Packages',
+      content: path.resolve(rootDir, './site/docs/Packages.md'),
       sections: packageSections,
       sectionDepth: 2,
     },
