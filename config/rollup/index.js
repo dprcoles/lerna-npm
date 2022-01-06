@@ -1,5 +1,5 @@
 const path = require('path')
-const { babel } = require('@rollup/plugin-babel')
+const babel = require('@rollup/plugin-babel').default
 const resolve = require('@rollup/plugin-node-resolve').default
 const url = require('@rollup/plugin-url')
 const image = require('@rollup/plugin-image')

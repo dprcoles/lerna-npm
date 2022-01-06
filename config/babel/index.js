@@ -1,12 +1,14 @@
 const path = require('path')
 
+const { MODULES } = process.env
+
 module.exports = {
   presets: [
     '@babel/react',
     [
       '@babel/env',
       {
-        modules: false,
+        modules: MODULES === 'false' ? false : 'commonjs',
         loose: true,
         useBuiltIns: 'entry',
         corejs: 2,
@@ -21,7 +23,7 @@ module.exports = {
         [
           '@babel/env',
           {
-            modules: false,
+            modules: 'commonjs',
             loose: true,
             targets: { node: true },
           },
