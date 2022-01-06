@@ -6,19 +6,21 @@
     "packages/*"
   ],
   "scripts": {
+    "create:package": "node scripts/create",
     "commit": "cz",
     "test:all": "lerna run test",
     "ci:test": "lerna run test --since",
-    "ci:build": "lerna run build --since",
+    "ci:build": "lerna run build",
     "ci:changes": "lerna ls --since",
     "ci:install": "yarn install --frozen-lockfile",
     "ci:preversion": "lerna version prerelease --conventional-prerelease --create-release github -m \"chore(prerelease): publish [skip ci]\" --yes",
     "ci:prepublish": "yarn ci:build && lerna publish from-package --npm-tag next --include-merged-tags -y",
-    "ci:version": "lerna version --conventional-commits --conventional-graduate --create-release github --yes --",
+    "ci:version": "lerna version --conventional-commits --conventional-graduate --create-release github --yes",
     "ci:publish": "yarn ci:build && lerna publish from-package -y --include-merged-tags",
     "ci:docs": "node scripts/docs",
     "styleguide:dev": "yarn styleguidist server --config ./site",
-    "styleguide:build": "yarn cross-env NODE_ENV=production styleguidist build --config ./site"
+    "styleguide:build": "yarn cross-env NODE_ENV=production styleguidist build --config ./site",
+    "styleguide:deploy": "gh-pages -d styleguide"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
