@@ -13,7 +13,7 @@ env:
 
 jobs:
   publish_and_deploy:
-    name: Publish 📦 & Deploy 🚀 
+    name: Publish 📦 & Deploy 🚀
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -25,20 +25,19 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@dcolesdev'
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@dcolesdev"
 
       - name: Setup GitHub Actions Bot 🤖
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
       - name: Install 🔻
         run: yarn ci:install
 
       - name: Build 👷
         run: yarn ci:build
-      
+
       - name: Test 🧪
         run: yarn ci:test
 
@@ -48,31 +47,29 @@ jobs:
       - name: Publish Packages 📦
         run: yarn ci:publish
 
-      - name: Update Docs ✍️
+      - name: Update Docs 📝️
         run: yarn ci:docs
-        
-      - name: Check For Changes ✔️
+
+      - name: Check For Docs Changes 🔍
         id: changes
         run: |
-         if [[ -z $(git status -s) ]]; then
-            echo ::set-output name=has_changes::false
-         else
-            echo ::set-output name=has_changes::true
-         fi
+          if [[ -z $(git status -s --untracked-files=no) ]]; then
+             echo ::set-output name=has_changes::false
+          else
+             echo ::set-output name=has_changes::true
+          fi
         shell: bash
-      
-      - name: Publish Docs 📜
+
+      - name: Publish Docs 📤
         if: steps.changes.outputs.has_changes == 'true'
         run: |
-          git commit -am "chore(docs) version update"
-          git push
-          
+          git commit -am "chore(docs) version update [skip ci]"
+          git push --force
       - name: Build Style Guide 👷
         run: yarn styleguide:build
-        
+
       - name: Deploy Style Guide 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: styleguide
-      
