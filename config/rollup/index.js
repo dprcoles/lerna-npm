@@ -1,7 +1,9 @@
-const babel = require('rollup-plugin-babel')
-const resolve = require('rollup-plugin-node-resolve')
+const path = require('path')
+const { babel } = require('@rollup/plugin-babel')
+const resolve = require('@rollup/plugin-node-resolve').default
 const url = require('@rollup/plugin-url')
 const image = require('@rollup/plugin-image')
+const svgr = require('@svgr/rollup').default
 
 const bundle = ({
   external,
@@ -33,7 +35,12 @@ const bundle = ({
     babel({
       exclude: 'node_modules/**',
     }),
-    url(),
+    url({
+      fileName: '[dirname][hash][extname]',
+      sourceDir: path.join(__dirname, 'src'),
+      limit: 0,
+    }),
+    svgr(),
     image(),
   ],
 })
