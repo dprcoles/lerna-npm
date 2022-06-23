@@ -6,6 +6,10 @@ const webpackConfig = require('./webpack.config')
 const theme = require('./theme')
 const styles = require('./styles')
 
+const typescriptParser = require('react-docgen-typescript').withCustomConfig(
+  `${__dirname}/tsconfig.json`
+)
+
 const { PACKAGE_PREFIX } = require('../scripts/constants')
 
 const reactDocs = require('react-docgen')
@@ -34,7 +38,7 @@ const getPackageSections = (pkgs) => {
           },
           {
             name: 'Components',
-            components: path.resolve(rootDir, `packages/${pkgs[i]}/src/*.jsx`),
+            components: path.resolve(rootDir, `packages/${pkgs[i]}/src/*.{jsx,tsx}`),
           },
         ],
         sectionDepth: 1,
@@ -58,6 +62,10 @@ module.exports = {
   },
   webpackConfig,
   propsParser(filePath, source, resolver, handlers) {
+    if (filePath.endsWith('.tsx')) {
+      return typescriptParser.parse(filePath)
+    }
+
     return reactDocs.parse(source, resolver, handlers, {
       filename: filePath,
     })
@@ -81,11 +89,12 @@ module.exports = {
     path.resolve(__dirname, './scss/main.scss'),
   ],
   getComponentPathLine(componentPath) {
-    if (!componentPath.endsWith('.jsx')) {
+    if (!componentPath.endsWith('.jsx') && !componentPath.endsWith('.tsx')) {
       return componentPath
     }
 
-    const component = path.basename(componentPath, '.jsx')
+    const component = path.basename(componentPath, '.jsx') || path.basename(componentPath, '.tsx')
+
     const pkg = path
       .dirname(componentPath)
       .replace('packages/', PACKAGE_PREFIX)

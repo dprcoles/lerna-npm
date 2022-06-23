@@ -42,8 +42,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(j|t)sx?$/,
         use: 'babel-loader?cacheDirectory',
+        exclude: isDev ? [/node_modules/] : [],
+      },
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
         exclude: isDev ? [/node_modules/] : [],
       },
       {
@@ -99,6 +104,6 @@ module.exports = {
         './components/Heading.jsx'
       ),
     },
-    extensions: ['.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
 }
