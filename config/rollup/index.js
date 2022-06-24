@@ -4,6 +4,29 @@ const resolve = require('@rollup/plugin-node-resolve').default
 const url = require('@rollup/plugin-url')
 const image = require('@rollup/plugin-image')
 const svgr = require('@svgr/rollup').default
+const typescript = require('@rollup/plugin-typescript')
+
+let plugins = [
+  resolve({
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  }),
+  babel({
+    exclude: 'node_modules/**',
+  }),
+  url({
+    fileName: '[dirname][hash][extname]',
+    sourceDir: path.join(__dirname, 'src'),
+    limit: 0,
+  }),
+  svgr(),
+  image(),
+]
+
+const args = process.argv
+
+if (args[2] === 'typescript') {
+  plugins = [...plugins, typescript()]
+}
 
 const bundle = ({
   external,
@@ -28,21 +51,7 @@ const bundle = ({
     // eslint-disable-next-line no-useless-escape
     return externalDeps.includes(packageName) || !/^[\.|\/]/.test(id)
   },
-  plugins: [
-    resolve({
-      extensions: ['.js', '.jsx'],
-    }),
-    babel({
-      exclude: 'node_modules/**',
-    }),
-    url({
-      fileName: '[dirname][hash][extname]',
-      sourceDir: path.join(__dirname, 'src'),
-      limit: 0,
-    }),
-    svgr(),
-    image(),
-  ],
+  plugins,
 })
 
 module.exports = (config) => [

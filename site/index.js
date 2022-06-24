@@ -34,7 +34,7 @@ const getPackageSections = (pkgs) => {
           },
           {
             name: 'Components',
-            components: path.resolve(rootDir, `packages/${pkgs[i]}/src/*.jsx`),
+            components: path.resolve(rootDir, `packages/${pkgs[i]}/src/*.{jsx,tsx}`),
           },
         ],
         sectionDepth: 1,
@@ -81,11 +81,12 @@ module.exports = {
     path.resolve(__dirname, './scss/main.scss'),
   ],
   getComponentPathLine(componentPath) {
-    if (!componentPath.endsWith('.jsx')) {
+    if (!componentPath.endsWith('.jsx') && !componentPath.endsWith('.tsx')) {
       return componentPath
     }
 
-    const component = path.basename(componentPath, '.jsx')
+    const component = path.basename(componentPath, '.jsx') || path.basename(componentPath, '.tsx')
+
     const pkg = path
       .dirname(componentPath)
       .replace('packages/', PACKAGE_PREFIX)

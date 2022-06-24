@@ -4,6 +4,7 @@ const { MODULES } = process.env
 
 module.exports = {
   presets: [
+    '@babel/preset-typescript',
     '@babel/react',
     [
       '@babel/env',
@@ -11,7 +12,7 @@ module.exports = {
         modules: MODULES === 'false' ? false : 'commonjs',
         loose: true,
         useBuiltIns: 'entry',
-        corejs: 2,
+        corejs: '3.15',
       },
     ],
   ],
@@ -28,6 +29,7 @@ module.exports = {
             targets: { node: true },
           },
         ],
+        '@babel/preset-typescript',
       ],
       plugins: [path.dirname(require.resolve('babel-plugin-dynamic-import-node'))],
     },
