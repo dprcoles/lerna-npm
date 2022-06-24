@@ -50,7 +50,7 @@ Packages are versioned [semantically](https://semver.org/#summary), and managed 
         >@dcolesdev/gnocchi
         </a>
       </td>
-      <td>1.8.17</td>
+      <td>1.8.18</td>
       <td>An example package using lerna to deploy and manage versioning</td>
       <td align="center">
         <a href="https://github.com/dcolesDEV/lerna-npm/blob/master/packages/gnocchi" style="height: 20px;">
@@ -64,7 +64,7 @@ Packages are versioned [semantically](https://semver.org/#summary), and managed 
         >@dcolesdev/rigatoni
         </a>
       </td>
-      <td>1.7.25</td>
+      <td>1.7.26</td>
       <td>An example package using lerna to deploy and manage versioning</td>
       <td align="center">
         <a href="https://github.com/dcolesDEV/lerna-npm/blob/master/packages/rigatoni" style="height: 20px;">
