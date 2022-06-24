@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.26](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.7.26-alpha.0...@dcolesdev/rigatoni@1.7.26) (2022-06-24)
+
+**Note:** Version bump only for package @dcolesdev/rigatoni
+
+
+
+
+
 ## [1.7.26-alpha.0](https://github.com/dcolesDEV/lerna-npm/compare/@dcolesdev/rigatoni@1.7.25...@dcolesdev/rigatoni@1.7.26-alpha.0) (2022-06-23)
 
 **Note:** Version bump only for package @dcolesdev/rigatoni
