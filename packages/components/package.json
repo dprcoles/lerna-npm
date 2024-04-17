@@ -1,6 +1,6 @@
 {
   "name": "@dprcoles/components",
-  "version": "1.0.0",
+  "version": "1.0.1-alpha.0",
   "description": "Core react components and styling",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
@@ -31,11 +31,11 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "cva": "npm:class-variance-authority@^0.7.0",
-    "classnames": "^2.5.1"
+    "classnames": "^2.5.1",
+    "cva": "npm:class-variance-authority@^0.7.0"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.3",
-    "@dprcoles/styles": "workspace:*"
+    "@dprcoles/styles": "workspace:*",
+    "tailwindcss": "^3.4.3"
   }
 }
