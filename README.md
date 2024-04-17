@@ -50,7 +50,7 @@ Packages are versioned [semantically](https://semver.org/#summary), and managed 
     </thead>
     <tbody><tr>
         <td>@dprcoles/components</td>
-        <td>1.0.0</td>
+        <td>1.0.1</td>
         <td>Core react components and styling</td>
         <td align="center">
           <a href="https://github.com/dprcoles/lerna-npm/blob/main/packages/components" style="height: 20px;">
@@ -59,7 +59,7 @@ Packages are versioned [semantically](https://semver.org/#summary), and managed 
         </td>
       </tr><tr>
         <td>@dprcoles/styles</td>
-        <td>1.0.0</td>
+        <td>1.0.1</td>
         <td>Styling configuration</td>
         <td align="center">
           <a href="https://github.com/dprcoles/lerna-npm/blob/main/packages/styles" style="height: 20px;">
@@ -68,7 +68,7 @@ Packages are versioned [semantically](https://semver.org/#summary), and managed 
         </td>
       </tr><tr>
         <td>@dprcoles/tokens</td>
-        <td>1.0.0</td>
+        <td>1.0.1</td>
         <td>Design tokens</td>
         <td align="center">
           <a href="https://github.com/dprcoles/lerna-npm/blob/main/packages/tokens" style="height: 20px;">
