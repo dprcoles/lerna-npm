@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   CI: true
@@ -16,39 +16,45 @@ jobs:
     name: Publish 📦 & Deploy 🚀
     runs-on: ubuntu-latest
     steps:
+      - name: Install pnpm 📦
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8.10.1
+
       - name: Checkout 🛎️
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
 
       - name: Setup Node 🔧
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20.9.0
           registry-url: "https://npm.pkg.github.com"
-          scope: "@dcolesdev"
+          scope: "@dprcoles"
 
       - name: Setup GitHub Actions Bot 🤖
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-      - name: Install 🔻
-        run: yarn ci:install
 
-      - name: Build 👷
-        run: yarn ci:build
+      - name: Install 🔻
+        run: pnpm ci:install
+
+      - name: Build 🧱
+        run: pnpm ci:build
 
       - name: Test 🧪
-        run: yarn ci:test
+        run: pnpm ci:test
 
       - name: Version Packages 🏷️
-        run: yarn ci:version
+        run: pnpm ci:version
 
       - name: Publish Packages 📦
-        run: yarn ci:publish
+        run: pnpm ci:publish
 
       - name: Update Docs 📝️
-        run: yarn ci:docs
+        run: pnpm ci:docs
 
       - name: Check For Docs Changes 🔍
         id: changes
@@ -65,11 +71,12 @@ jobs:
         run: |
           git commit -am "chore(docs) version update [skip ci]"
           git push --force
-      - name: Build Style Guide 👷
-        run: yarn styleguide:build
+
+      - name: Build Storybook 📚
+        run: pnpm storybook:build
 
       - name: Deploy Style Guide 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
-          folder: styleguide
+          folder: storybook-static

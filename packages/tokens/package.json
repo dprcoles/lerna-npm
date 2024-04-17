@@ -1,0 +1,25 @@
+{
+  "name": "@dprcoles/tokens",
+  "description": "Design tokens",
+  "version": "1.0.1-alpha.0",
+  "module": "./dist",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:dprcoles/lerna-npm.git",
+    "directory": "packages/tokens"
+  },
+  "scripts": {
+    "build": "rimraf dist && node build",
+    "lint": "eslint build.js --ext .js",
+    "test": "pnpm lint"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "eslintConfig": {
+    "extends": "../../.eslintrc.js"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.9.2"
+  }
+}

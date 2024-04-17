@@ -1,0 +1,7 @@
+@import url("../packages/tokens/dist/css/tokens.css");
+@import url("../packages/components/src/css/main.css");
+@import url("tailwindcss/tailwind.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

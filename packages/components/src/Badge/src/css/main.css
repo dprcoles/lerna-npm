@@ -1,0 +1,23 @@
+@tailwind components;
+
+@layer components {
+  .dc-c-badge {
+    @apply dc-inline-flex dc-items-center dc-rounded-full dc-border dc-px-2.5 dc-py-0.5 dc-text-xs dc-font-semibold dc-transition-colors focus:dc-outline-none focus:dc-ring-2 focus:dc-ring-ring focus:dc-ring-offset-2;
+  }
+
+  .dc-c-badge--primary {
+    @apply dc-border-transparent hover:dc-bg-primary-hover dc-bg-primary dc-text-primary-foreground;
+  }
+
+  .dc-c-badge--secondary {
+    @apply dc-border-transparent hover:dc-bg-secondary-hover dc-bg-secondary dc-text-secondary-foreground;
+  }
+
+  .dc-c-badge--danger {
+    @apply dc-border-transparent hover:dc-bg-danger-hover dc-bg-danger dc-text-danger-foreground;
+  }
+
+  .dc-c-badge--outline {
+    @apply dc-bg-transparent dc-border-input dc-text-accent-foreground hover:dc-bg-accent;
+  }
+}

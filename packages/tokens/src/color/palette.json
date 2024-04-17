@@ -1,0 +1,51 @@
+{
+  "color": {
+    "palette": {
+      "background": {
+        "value": "rgba(31, 31, 31, 1)"
+      },
+      "foreground": {
+        "value": "rgba(255, 255, 255, 1)"
+      },
+      "primary": {
+        "value": "rgba(230, 102, 204, 1)"
+      },
+      "primary-foreground": {
+        "value": "rgba(41, 41, 41, 1)"
+      },
+      "primary-hover": {
+        "value": "rgba(230, 102, 204, 0.9)"
+      },
+      "secondary": {
+        "value": "rgba(41, 41, 41, 1)"
+      },
+      "secondary-foreground": {
+        "value": "rgba(230, 102, 204, 1)"
+      },
+      "secondary-hover": {
+        "value": "rgba(41, 41, 41, 0.8)"
+      },
+      "danger": {
+        "value": "rgba(255, 62, 62, 1)"
+      },
+      "danger-foreground": {
+        "value": "rgba(255, 255, 255, 1)"
+      },
+      "danger-hover": {
+        "value": "rgba(255, 62, 62, 0.9)"
+      },
+      "accent": {
+        "value": "rgba(230, 102, 204, 0.2)"
+      },
+      "accent-foreground": {
+        "value": "rgba(230, 102, 204, 1)"
+      },
+      "ring": {
+        "value": "rgba(230, 102, 204, 1)"
+      },
+      "input": {
+        "value": "rgba(230, 102, 204, 1)"
+      }
+    }
+  }
+}

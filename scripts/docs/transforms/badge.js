@@ -1,6 +1,6 @@
-const { loadPackageJson } = require('../../utils')
+const { loadPackageJson } = require("../../utils")
 
-const badge = (pkg) => {
+const badge = pkg => {
   if (!pkg) {
     return false
   }
@@ -8,8 +8,8 @@ const badge = (pkg) => {
   const { version } = loadPackageJson(pkg)
 
   return `![Package Version](https://img.shields.io/badge/version-v${version.replace(
-    '-',
-    '--'
+    "-",
+    "--"
   )}-orange)`
 }
 

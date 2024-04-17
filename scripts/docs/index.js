@@ -1,7 +1,19 @@
-const updateMarkdown = require('./transforms')
+const markdownMagic = require("markdown-magic")
 
-const docs = async () => {
-  await updateMarkdown()
+const badgeTransform = require("./transforms/badge")
+const packageListTransform = require("./transforms/packageList")
+
+const config = {
+  transforms: {
+    /* Match <!-- AUTO-GENERATED-CONTENT:START (packageList) --> */
+    packageList() {
+      return packageListTransform()
+    },
+    /* Match <!-- AUTO-GENERATED-CONTENT:START (badge:package) --> */
+    badge(_content, options) {
+      return options && badgeTransform(options.package)
+    },
+  },
 }
 
-docs()
+markdownMagic(["./README.md", "./packages/**/README.md"], config)

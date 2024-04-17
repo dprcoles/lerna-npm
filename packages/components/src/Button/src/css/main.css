@@ -1,0 +1,48 @@
+@tailwind components;
+@tailwind variants;
+
+@layer components {
+  .dc-c-button {
+    @apply dc-inline-flex dc-h-10 dc-items-center dc-justify-center dc-whitespace-nowrap dc-rounded-md dc-px-4 dc-py-2 dc-text-sm dc-font-bold dc-ring-offset-background dc-transition-colors focus-visible:dc-outline-none focus-visible:dc-ring-2 focus-visible:dc-ring-ring focus-visible:dc-ring-offset-2 disabled:dc-pointer-events-none disabled:dc-opacity-50;
+  }
+
+  .dc-c-button--primary {
+    @apply hocus:dc-bg-primary-hover dc-bg-primary dc-text-primary-foreground;
+  }
+
+  .dc-c-button--secondary {
+    @apply hocus:dc-bg-secondary-hover dc-bg-secondary dc-text-secondary-foreground;
+  }
+
+  .dc-c-button--danger {
+    @apply hocus:dc-bg-danger-hover dc-bg-danger dc-text-danger-foreground focus-visible:dc-ring-danger;
+  }
+
+  .dc-c-button--outline {
+    @apply hocus:dc-bg-accent hocus:dc-text-accent-foreground dc-border dc-border-input dc-bg-background dc-text-primary focus-visible:dc-ring-input;
+  }
+
+  .dc-c-button--ghost {
+    @apply hocus:dc-bg-accent hocus:dc-text-accent-foreground dc-text-primary;
+  }
+
+  .dc-c-button--link {
+    @apply hocus:dc-underline dc-text-primary dc-underline-offset-4;
+  }
+
+  .dc-c-button--small {
+    @apply dc-h-9 dc-rounded-md dc-px-3;
+  }
+
+  .dc-c-button--large {
+    @apply dc-h-11 dc-rounded-md dc-px-8;
+  }
+
+  .dc-c-button--icon {
+    @apply dc-h-10 dc-w-10;
+  }
+
+  .dc-c-button--full {
+    @apply dc-w-full;
+  }
+}
