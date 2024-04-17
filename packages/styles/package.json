@@ -1,7 +1,7 @@
 {
   "name": "@dprcoles/styles",
   "description": "Styling configuration",
-  "version": "1.0.1-alpha.0",
+  "version": "1.0.1",
   "main": "index.js",
   "module": "./dist",
   "exports": {

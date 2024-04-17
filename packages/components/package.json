@@ -1,6 +1,6 @@
 {
   "name": "@dprcoles/components",
-  "version": "1.0.1-alpha.0",
+  "version": "1.0.1",
   "description": "Core react components and styling",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
