@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge /> renders matching snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="dc-c-badge dc-c-badge--primary"
+  >
+    Test Badge
+  </div>
+</DocumentFragment>
+`;

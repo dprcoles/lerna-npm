@@ -1,0 +1,41 @@
+{
+  "name": "@dprcoles/components",
+  "version": "1.0.0",
+  "description": "Core react components and styling",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:dprcoles/lerna-npm.git",
+    "directory": "packages/components"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsup && tsc --emitDeclarationOnly --declaration",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx && stylelint ./src/**/*.css",
+    "test:unit": "jest --config ../../jest.config.js",
+    "test": "pnpm lint && pnpm test:unit -u"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "eslintConfig": {
+    "extends": "../../.eslintrc.js"
+  },
+  "stylelint": {
+    "extends": "../../.stylelintrc.js"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "cva": "npm:class-variance-authority@^0.7.0",
+    "classnames": "^2.5.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3",
+    "@dprcoles/styles": "workspace:*"
+  }
+}

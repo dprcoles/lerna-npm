@@ -1,0 +1,33 @@
+{
+  "name": "@dprcoles/styles",
+  "description": "Styling configuration",
+  "version": "1.0.0",
+  "main": "index.js",
+  "module": "./dist",
+  "exports": {
+    "./tailwind.config.js": "./tailwind.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:dprcoles/lerna-npm.git",
+    "directory": "packages/styles"
+  },
+  "scripts": {
+    "build:css": "postcss ./src/css/main.css --config ../../postcss.config.js -o ./dist/css/main.css",
+    "build": "rimraf dist css && pnpm build:css",
+    "lint": "stylelint ./src/**/*.css",
+    "test": "pnpm lint"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "eslintConfig": {
+    "extends": "../../.eslintrc.js"
+  },
+  "stylelint": {
+    "extends": "../../.stylelintrc.js"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

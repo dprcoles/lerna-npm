@@ -1,11 +1,8 @@
 {
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": ["packages/*"],
   "version": "independent",
-  "useWorkspaces": true,
-  "npmClient": "yarn",
+  "npmClient": "pnpm",
   "command": {
     "publish": {
       "conventionalCommits": true,
@@ -16,5 +13,6 @@
     "version": {
       "ignore": ["**/__tests__/**", "**/*.md"]
     }
-  }
+  },
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }
